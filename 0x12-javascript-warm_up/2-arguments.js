@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
 function printComment () {
-  const myArgvs = process.argv.slice(2);
-  if (myArgvs.length === 0) {
+  const myArgvs = process.argv.length - 2;
+  if (myArgvs === 0) {
     console.log('No argumets');
-  } else if (myArgvs.length === 1) {
+  } else if (myArgvs === 1) {
     console.log('Argument found');
   } else {
     console.log('Arguments found');
